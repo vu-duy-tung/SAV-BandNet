@@ -56,17 +56,57 @@ Inference uses four-second windows: 1.6 seconds of preceding context, 1.6 second
 
 ## Demonstrations
 
-These five selected examples illustrate successful extraction under different acoustic conditions. They are qualitative examples, not a representative performance summary. Each target video shows the aligned mouth crops supplied to the model. The mixture listening preview uses microphone 0; inference uses all six channels.
+These five selected examples illustrate successful extraction under different acoustic conditions. They are qualitative examples, not a representative performance summary. Each player shows the target mouth crops with either the mixture or the extracted speech. Mixture playback uses microphone 0; inference uses all six channels.
 
-| Example | Condition | Target video | Mixture preview | Extracted speech | Reproduce |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Reverberant room | [Video](demos/sample_01/target.mp4) | [Audio](demos/sample_01/mixture.wav) | [Audio](demos/sample_01/extracted.wav) | [6-channel input](demos/sample_01/mixture_6ch.wav), [mouth crops](demos/sample_01/mouths.npz) |
-| 2 | Office | [Video](demos/sample_02/target.mp4) | [Audio](demos/sample_02/mixture.wav) | [Audio](demos/sample_02/extracted.wav) | [6-channel input](demos/sample_02/mixture_6ch.wav), [mouth crops](demos/sample_02/mouths.npz) |
-| 3 | Outdoor scene | [Video](demos/sample_03/target.mp4) | [Audio](demos/sample_03/mixture.wav) | [Audio](demos/sample_03/extracted.wav) | [6-channel input](demos/sample_03/mixture_6ch.wav), [mouth crops](demos/sample_03/mouths.npz) |
-| 4 | Dry room | [Video](demos/sample_04/target.mp4) | [Audio](demos/sample_04/mixture.wav) | [Audio](demos/sample_04/extracted.wav) | [6-channel input](demos/sample_04/mixture_6ch.wav), [mouth crops](demos/sample_04/mouths.npz) |
-| 5 | Reverberant room | [Video](demos/sample_05/target.mp4) | [Audio](demos/sample_05/mixture.wav) | [Audio](demos/sample_05/extracted.wav) | [6-channel input](demos/sample_05/mixture_6ch.wav), [mouth crops](demos/sample_05/mouths.npz) |
+### Example 1: Reverberant room
 
-After cloning, open `demos/index.html` in a browser for audio and video players on one page. GitHub may offer downloads instead of inline playback for relative media links.
+**Input: target video and mixture audio**
+
+https://github.com/user-attachments/assets/dd07b1ca-12e6-4694-ab66-b96853bb8e9f
+
+**Output: target video and extracted speech**
+
+https://github.com/user-attachments/assets/d6a64c27-e372-40fa-b699-d2bd2fe997b1
+
+### Example 2: Office
+
+**Input: target video and mixture audio**
+
+https://github.com/user-attachments/assets/666e037f-4ad1-47de-9dd6-4057644bad79
+
+**Output: target video and extracted speech**
+
+https://github.com/user-attachments/assets/f9c1a942-5500-42c3-810a-861f282f8c0d
+
+### Example 3: Outdoor scene
+
+**Input: target video and mixture audio**
+
+https://github.com/user-attachments/assets/0e7e2221-dcbb-41f4-a553-6f01407070b5
+
+**Output: target video and extracted speech**
+
+https://github.com/user-attachments/assets/70725e75-0bc5-4ebd-b8c2-26e9271ee294
+
+### Example 4: Dry room
+
+**Input: target video and mixture audio**
+
+https://github.com/user-attachments/assets/d1e4ce63-0c5c-45d9-b644-7a5cfccacae0
+
+**Output: target video and extracted speech**
+
+https://github.com/user-attachments/assets/b607069d-aa09-4203-9808-7c9072eaeed4
+
+### Example 5: Reverberant room
+
+**Input: target video and mixture audio**
+
+https://github.com/user-attachments/assets/41389dc0-df63-402c-830b-3e53a96c48bd
+
+**Output: target video and extracted speech**
+
+https://github.com/user-attachments/assets/c1cabfcf-eb8a-4476-9a7c-a1ecbca30b65
 
 ## Code and acknowledgments
 
