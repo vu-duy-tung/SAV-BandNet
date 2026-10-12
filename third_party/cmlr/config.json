@@ -1,0 +1,17 @@
+{
+  "adim": 256,
+  "aheads": 4,
+  "eunits": 2048,
+  "elayers": 12,
+  "transformer_input_layer": "conv3d",
+  "dropout_rate": 0.1,
+  "transformer_attn_dropout_rate": 0.1,
+  "transformer_encoder_attn_layer_type": "rel_mha",
+  "macaron_style": 1,
+  "use_cnn_module": 1,
+  "cnn_module_kernel": 31,
+  "zero_triu": false,
+  "a_upsample_ratio": 1,
+  "relu_type": "swish",
+  "rel_pos_type": "latest"
+}
