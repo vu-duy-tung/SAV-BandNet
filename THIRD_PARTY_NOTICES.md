@@ -1,13 +1,10 @@
-# Third-party components
+# Third-party notices
 
-This private research snapshot retains the following dependencies used by the trained model:
+The release preserves upstream source headers and separates code, pretrained weights and source-data provenance.
 
-- `third_party/tiger_models`: TIGER model code from the DAVE research checkout. The retained Apache 2.0 license is in `third_party/TIGER_LICENSE`. Original source headers are preserved.
-- `third_party/cmlr/espnet`: the CMLR encoder's ESPnet implementation. Original source headers are preserved, and the supplied upstream license is in `third_party/CMLR_LICENSE`. Its research-use provisions remain applicable. `config.json` contains architecture settings only.
-- `third_party/ipdnet2_upstream`: the IPDNet2 architecture snapshot used in training. No standalone license file was present in the retained upstream checkout; public redistribution terms remain unverified.
-- `third_party/ipdnet2_av_exp3` and `third_party/ipdnet2_ft`: circular-six visual conditioning and preprocessing adaptations. Training-only dataset loading and machine-specific paths were removed for this inference release without changing the inference computation.
-- Mamba is installed separately and is not bundled as a binary or source dependency in this repository.
+- **DAVE/TIGER:** retained research source from the DAVE checkout. Its Apache 2.0 notice is in `third_party/paper_runtime/dave/LICENSE`. The adapted checkpoint is identified separately in `PROVENANCE.json`.
+- **TalkNet:** audiovisual model sources and the frozen TalkSet image checkpoint. The retained upstream code notice is in `third_party/paper_runtime/talknet/LICENSE.md`. Frozen image weights are distinct from the adapted temporal components.
+- **IPDNet2:** architecture from Audio-WestlakeU/FN-SSL, with circular-six and visual-conditioning adaptations. The upstream README at commit `76fcb281be92caf068c712dfb015e354f437260f` declares MIT; that retained declaration is in `docs/notices/IPDNet2_upstream_README.md`. It does not independently establish checkpoint-specific redistribution terms.
+- **Mamba:** installed separately; no platform-specific extension binary is included in the public implementation archive.
 
-The five demo scenes originate from the internal SAVE synthetic test release. They contain source-derived audiovisual material and are included for private research review. Their inclusion does not establish permission for public redistribution. No license for the complete repository or media is implied by any individual dependency's license.
-
-Public release requires a separate review of the IPDNet2 and source-media redistribution terms. Checkpoints and the full dataset are excluded.
+No license of a component is asserted to cover all trained weights, source speech, mouth crops, noise recordings or room-response assets. Consult the relevant upstream terms. No CMLR encoder code or weights are included in the active runtime or model bundle.

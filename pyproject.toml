@@ -4,17 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sav-bandnet"
-version = "0.1.0"
-description = "Spatial audio-visual target speech extraction for a circular six-microphone array"
-requires-python = ">=3.11,<3.12"
-dependencies = ["torch>=2.6,<2.8", "numpy", "scipy", "soundfile", "einops", "packaging"]
-
-[project.scripts]
-sav-bandnet-infer = "spatial_av_bandnet.infer:main"
+version = "0.2.0"
+description = "Spatial–audiovisual consistency for streaming target-speech extraction"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.6", "numpy", "scipy", "soundfile", "opencv-python", "einops", "asteroid-filterbanks", "huggingface-hub", "tqdm"]
 
 [tool.setuptools.packages.find]
-include = ["spatial_av_bandnet*", "third_party*"]
-namespaces = true
-
-[tool.setuptools.package-data]
-"third_party.cmlr" = ["config.json"]
+include = ["sav_bandnet*"]
